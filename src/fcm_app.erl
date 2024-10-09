@@ -19,12 +19,12 @@
 
 -spec start() -> ok.
 start() ->
-  {ok, _} = application:ensure_all_started(pegb_wallet_core),
+  {ok, _} = application:ensure_all_started(fcm),
   ok.
 
 -spec stop() -> ok.
 stop() ->
-  application:stop(pegb_wallet_core).
+  application:stop(fcm).
 
 %%%===================================================================
 %%% Application callbacks
